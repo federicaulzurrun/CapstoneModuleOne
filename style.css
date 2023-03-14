@@ -65,7 +65,10 @@ nav {
 }
 
 .cards-deployment {
-  background-image: url(./assets/backgroundmaindevelopment.svg);
+  background-image: url(./assets/pattern_bg.png);
+  background-color: #272a32;
+  background-repeat: repeat;
+  color: #fff;
 }
 
 .incoming {
