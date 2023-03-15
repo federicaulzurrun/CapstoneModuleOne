@@ -1,3 +1,8 @@
+.fonts {
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
 body {
   background-color: #fff;
 }
@@ -73,4 +78,51 @@ nav {
 
 .incoming {
   background-color: #fff;
+}
+
+
+
+
+/* About Us Page CSS */
+
+.main-aboutUs{
+  background-color: #F7F7F8;
+}
+
+.main-titles-about {
+  background-image: url(./assets/backgroundmain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description-main-about {
+  background-color: #fff;
+}
+
+.contact-main-aboutUs {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.partnerships {
+  background-color: #fff;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners h4 {
+  align-self: center;
+}
+
+.partners img {
+  width: 75%;
+  align-self: center;
+}
+
+footer .partner{
+  background-color: #414246;
 }
