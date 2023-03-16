@@ -13,8 +13,21 @@
 </head>
 <body>
   <header>
-    <nav class="container-nav d-flex flex-direction-row px-2 py-2 gap-5">
-      <ul class="nav-menu pt-5">
+    <div class="desktop-topNav">
+      <ul class="d-flex">
+        <li><a href=""><img src="./assets/facebook.svg" alt=""></a></li>
+        <li><a href=""><img src="./assets/twitter.svg" alt=""></a></li>
+        <li><a href="">English</a></li>
+      </ul>
+    </div>
+    <nav class="container-nav d-flex flex-direction-row px-2 py-2 ">
+      <div class="nav-log pt-2">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a class="d-flex aling-self-center " href="index.html"><img class="logoHeader" src="./assets/logo.png" alt=""></a>
+      <ul class="nav-menu ">
         <li class="page-parts about-link"><a class="nav-link" href="./aboutme.html">About</a></li>
         <li class="page-parts"><a class="nav-link" href="#program">Program</a></li>
         <li class="page-parts"><a class="nav-link" href="#blended-ways">Blended Ways</a></li>
@@ -22,19 +35,13 @@
         <li class="page-parts"><a class="nav-link" href="#sponsonrs">Sponsers</a></li>
         <li class="page-parts"><a class="nav-link" href="https://thesocialsciences.com/">Campain</a></li>
       </ul>
-      <div class="nav-log pt-2">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <a class="aling-self-center ps-5" href="index.html"><img src="./assets/logomobile.svg" alt=""></a>
     </nav>
   </header>
 
   <!--Main About Us-->
   <main class="main-aboutUs d-flex flex-column">
     <div class="main-titles-about d-flex flex-column-reverse">
-      <h1 class="title-aboutUs p-2">Interdisciplinary Social Sciences</h1>
+      <h1 class="title-aboutUs">Interdisciplinary Social Sciences</h1>
       <h2>Agency in an Era of Displacement and Social Change</h2>
       <img src="" alt="">
     </div>
@@ -42,57 +49,63 @@
       <p>Founded in 2006, the Interdisciplinary Social Sciences Research Network is brought together by a common interest in disciplinary and interdisciplinary approaches, within and across the various social sciences, and between the social, natural and applied sciences.</p>
     </div>
     <div class="contact-main-aboutUs">
-      <h5>Please contact us per Email for nay further questions about CC Global Summit 2015!</h5>
-      <p>ccsummit2015@cckorea.org</p>
+      <h5>To join us in the Scholar community click the following link!</h5>
+      <a href="https://cgscholar.com/community/community_profiles/interdisciplinary-social-sciences/community_updates">Join us!</a>
     </div>
   </main>
 
   <!--Development About Us-->
-  <section class="logo-history d-flex flex-column p-2 m-5">
-    <h2 class="partnerships-title aling-self-center mx-5 px-5 aling-self-center">Creative Commons Global Summit 2015 Logo</h2>
-    <img class="line d-flex align-self-center mb-5 mt-2" src="/assets/line.svg" alt="">
-    <p>The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.</p>
+  <section class="history d-flex flex-column">
+    <h2 class="anual-conference">Anual Conference</h2>
+    <img class="line d-flex align-self-center mb-3 mt-2" src="/assets/line.svg" alt="">
+    <p>The International Conference on Interdisciplinary Social Sciences attendees include leaders in the field, as well as emerging scholars</p>
+    <div class="img-history">
+      <img src="./assets/photo-about-history.jpeg" alt="">
+    </div>
   </section>
   
     
   <!--Past CC Section-->
-  <section class="develo-aboutUs d-flex flex-column py-3 px-5 justify-content-center gap-5 align-items-center mt-5">
-    <div class="d-flex flex-column align-items-center">
-      <h2 class="">Overview</h2>
+  <section class="develop-aboutUs d-flex flex-column py-3 px-5 justify-content-center gap-2 align-items-center mt-5">
+    <div class="past-editions">
+      <h2 class="">Past Editions</h2>
       <img  class="line d-flex align-self-center" src="./assets/line.svg" alt="">
-      <p>Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
+      <p>Take a look of the two previous Conferences flyers!</p>
     </div>  
-    <div  class="d-flex flex-column align-items-center aling-self-center gap-3">
-      <img src="./assets/about-conf-1.svg" alt="">
+    <div  class="previous-conferences">
+      <img src="./assets/conf2021.png" alt="">
     </div>
-    <div class="d-flex flex-column align-items-center aling-self-center gap-3">
-      <img src="./assets/about-conf-2.svg" alt="">
+    <div class="previous-conferences">
+      <img src="./assets/conf2022.png" alt="">
     </div>
   </section>
 
   <footer class="d-flex flex-column">
-    <div class="partner d-flex flex-column align-self-center w-100 gap-3">
+    <div class="partner d-flex flex-column w-100" id="sponsonrs">
       <div class="partner-title d-flex flex-column align-items-center">
-        <h3 class="aling-self-center">Partner</h3>
+        <h3 class="partners aling-self-center">Partners</h3>
         <img src="./assets/line.svg" alt="">
       </div>
-      <div class="d-flex align-self-center gap-4">
-        <img src="./assets/mozilla.svg" alt="">
-        <img src="./assets/google.svg" alt="">
-        <img src="./assets/naver.svg" alt="">
+      <div class="partners-logo d-flex">
+        <img class="w-25" src="./assets/uni1.jpeg" alt="">
+        <img class="w-25" src="./assets/uni2.jpeg" alt="">
+        <img class="w-25" src="./assets/uni3.jpeg" alt="">
       </div>
-      <div class="d-flex align-self-center gap-4 mb-3">
-        <img src="./assets/daumkakao.svg" alt="">
-        <img src="./assets/airbnb.svg" alt="">
+      <div class="partners-logo d-flex">
+        <img class="w-25" src="./assets/uni4.jpeg" alt="">
+        <img class="w-25" src="./assets/uni5.jpeg" alt="">
       </div>
     </div>
     <div class="partner-footer d-flex flex-row">
-      <img src="./assets/logofooter.svg" alt="">
-      <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+      <div class="footer-logo">
+        <img src="./assets/logoSolo.png" alt="">
+      </div>
+      <div class="support-footer">
+        <p>Have a question? We’re here to help. Visit the help center to get started.</p>
+        <a href="https://cgscholar.com/cg_support/en">support center</a>
+      </div>
     </div>
   </footer>
-
-
 
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

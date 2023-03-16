@@ -8,6 +8,13 @@ body {
 }
 
 /* NavBar */
+header {
+  height: fit-content;
+}
+
+.desktop-topNav {
+  display: none;
+}
 
 .container-nav {
   min-height: 70px;
@@ -17,6 +24,7 @@ body {
   width: 100%;
   background-color: #fff;
   margin-top: 0.001px;
+  gap: 3%;
 }
 
 .nav-log {
@@ -51,6 +59,13 @@ body {
   background-color: #272a32;
 }
 
+.logoHeader {
+  display: flex;
+  width: 80%;
+  padding: 2% 5%;
+  align-self: center;
+}
+
 .nav-menu {
   position: fixed;
   left: -100%;
@@ -66,7 +81,7 @@ body {
 
 .nav-menu.active {
   left: 0;
-  top: 70px;
+  top: 110px;
   position: absolute;
 }
 
@@ -83,11 +98,17 @@ body {
   transition: 0.7s ease;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 28px;
   line-height: 44px;
   text-transform: capitalize;
   margin-left: 28px;
+  letter-spacing: 3px;
+}
+
+.nav-link:hover {
+  color: #ec5242;
+  text-transform: uppercase;
 }
 
 /* Main Section Development*/
@@ -321,56 +342,223 @@ body {
 .partner {
   align-items: center;
   align-self: center;
+  padding-bottom: 10%;
+  gap: 15px;
+  background-color: #414246;
 }
 
 .partners-logo {
-  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6%;
   width: 80%;
-  align-items: center;
+  justify-content: center;
+}
+
+.partners-logo img {
   align-self: center;
 }
 
-
-/* About Us Page CSS */
-
-.main-aboutUs{
-  background-color: #F7F7F8;
-}
-
-.main-titles-about {
-  background-image: url(./assets/backgroundmain.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.description-main-about {
-  background-color: #fff;
-}
-
-.contact-main-aboutUs {
+.partners {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
-.partnerships {
-  background-color: #fff;
+.partner-footer {
+  padding: 4% 2%;
+  gap: 3%;
 }
 
-.partners {
+.footer-logo {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 80%;
+  align-self: center;
+}
+
+.support-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.partners h4 {
-  align-self: center;
+.support-footer p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -6%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.partners img {
-  width: 75%;
-  align-self: center;
+.support-footer a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: end;
+  text-transform: capitalize;
+  color: #414246;
+  align-self: flex-end;
 }
 
-footer .partner{
-  background-color: #414246;
+/* About Us Page CSS */
+
+.main-aboutUs{
+  background-color: #F7F7F8;
+  background-image: url(./assets/backgroundmain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-titles-about {
+  align-self: center;
+  padding: 2% 10%;
+  padding-top: 97px;
+}
+
+.title-aboutUs {
+  background-color: #ff4f38;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 48px;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.main-titles-about h2 {
+  color: #ec5242;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.description-main-about {
+  background-color: #fff;
+  padding: 5% 7%;
+  margin-top: 5%;
+}
+
+.description-main-about p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -6%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact-main-aboutUs {
+  margin: 6% 9%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main-aboutUs h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  color: #7a7a7a;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact-main-aboutUs a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 2%;
+  align-self: center;
+  color: #5f5f5f;
+}
+
+.history {
+  margin: 4% 5%;
+  align-items: center;
+}
+
+.anual-conference {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2%;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.history p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -3%;
+  color: #838383;
+  text-align: center;
+}
+
+.img-history {
+  width: 80%;
+  margin-top: 6%;
+}
+
+.img-history img {
+  width: 100%;
+}
+
+.past-editions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+
+.past-editions h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2%;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.past-editions p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: -3%;
+  color: #838383;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.previous-conferences {
+  width: 100%;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.previous-conferences img {
+  width: 100%;
+  height: 100%;
 }
