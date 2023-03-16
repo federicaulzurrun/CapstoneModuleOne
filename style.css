@@ -117,6 +117,7 @@ header {
   background-image: url(./assets/main-invite-background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 2%;
 }
 
 .main-titles {
@@ -189,6 +190,10 @@ header {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.cards-blended {
+  flex-direction: column;
 }
 
 .cards-deployment {
@@ -301,8 +306,8 @@ header {
 }
 
 .speaker .cards-img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 100%;
 }
 
 .Speaker-info {
@@ -372,19 +377,22 @@ header {
 }
 
 .partner-footer {
-  padding: 4% 2%;
+  padding: 1% 2%;
   gap: 3%;
 }
 
 .footer-logo {
   width: 50%;
-  height: 50%;
+  height: 20%;
   display: flex;
   align-items: center;
+  padding-left: 10%;
+  max-height: 100px;
 }
 
 .footer-logo img {
-  width: 80%;
+  width: 80px;
+  height: 80px;
   align-self: center;
 }
 
@@ -392,6 +400,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 10%;
 }
 
 .support-footer p {
@@ -531,6 +540,10 @@ header {
   gap: 5%;
 }
 
+.develop-aboutUs {
+  padding: 0 5%;
+}
+
 .past-editions h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -561,4 +574,223 @@ header {
 .previous-conferences img {
   width: 100%;
   height: 100%;
+}
+
+/* Desktop Version */
+
+@media only screen and (min-width: 768px) {
+  /* Header Desktop*/
+  .desktop-topNav {
+    display: flex;
+    background-color: #3e3e3e;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .desktop-topNav ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 3%;
+    margin: 1%;
+    margin-right: 10%;
+  }
+
+  .desktop-topNav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14,5px;
+  } 
+
+  .container-nav {
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-log {
+    display: none;
+  }
+
+  .container-nav img {
+    align-self: flex-start;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 18%;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: initial;
+    background-color: #fff;
+    text-decoration: none;
+    gap: 3%;
+    width: 60%;
+    padding-top: 5px;
+    padding-left: 0;
+    height: auto;
+    align-self: flex-end;
+    text-align: right;
+    transition: none;
+  }
+
+  .page-parts {
+    display: flex;
+    width: fit-content;
+    transition: none;
+    justify-content: flex-start;
+  }
+
+  .page-parts a {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 16.8px;
+    color: #868686;
+    padding: 0;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+  }
+
+  .about-link a {
+    color: #F07F7E;
+  }
+
+  .campain-link {
+    border: #EC4327 4px solid;
+    margin: 0;
+  }
+
+  .campain-link a {
+    margin: 2px;
+    align-items: center;
+    padding-bottom: 9px;
+    padding: 0 8px;
+    color: #EC4327;
+  }
+
+  /* Main Desktop */
+
+  .page-development {
+    padding: 0;
+    padding-left: 15%;
+    padding-right: 25%;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .main-description {
+    margin-top: 5%;
+  }
+
+  #program {
+    font-size: 23px;
+  }
+
+  .main-location h3 {
+    font-size: 1.6rem;
+  }
+
+  .main-location h6 {
+    font-size: 1rem;
+  }
+
+  /* Section Blended Ways */
+
+  .blended-title {
+    margin-bottom: 2%;
+  }
+
+  #blended-ways {
+    font-size: 1.7rem;
+  }
+
+  .cards-blended {
+    flex-direction: row;
+    margin: 0 5%;
+  }
+
+  .blended-ways {
+    flex-direction: column;
+    gap: 1%;
+    height: fit-content;
+    min-height: 400px;
+    min-width: 120px;
+    margin: 1% 1%;
+  }
+
+  .blended-ways img {
+    width: 80%;
+  }
+
+  .blended-ways h4 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .blended-ways p {
+    font-size: 0.7rem;
+  }
+
+  .speakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+    margin-right: 4%;
+    justify-content: center;
+    margin: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  /* About Us Page*/
+
+  .main-aboutUs {
+    padding: 0 15%;
+  }
+
+  .title-aboutUs {
+    font-size: 3rem;
+  }
+
+  .main-titles-about h2 {
+    font-size: 1.3rem;
+  }
+
+  .description-main-about p {
+    font-size: 1rem;
+  }
+
+  .contact-main-aboutUs h5 {
+    font-size: 1rem;
+  }
+
+  .history {
+    padding: 0 10%;
+  }
+
+  .develop-aboutUs {
+    padding: 0 15%;
+  }
+
+  .past-edition-photo {
+    display: flex;
+    gap: 8%;
+  }
 }
