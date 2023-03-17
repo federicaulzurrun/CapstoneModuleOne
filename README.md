@@ -20,10 +20,10 @@
 
 
 
-# 📖 [Capstone] <a name="about-project"></a>
+# 📖 [International Conference on Interdisciplinary Social Sciences] <a name="about-project"></a>
 
 
-**Porfolio** it's the beggining of the creation of my porfolio page. The main page it's almost completly done. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
+**Capstone**  Is the project that i created for the International Conference on Interdisciplinary Social Sciences and thir future conference in july. The tample it's copied from a tamplate tha Microverse gave us.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -149,7 +149,7 @@ If you like this project let me know via twitter ! and i'll follow you!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for letting me be a part of something as huge and life changer as this program is and giving us the tools so we can change our futures!
+I would like to thank International Conference on Interdisciplinary Social Sciences for allowing me to use their information to create this page and to trust me with this project for their future conference.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
