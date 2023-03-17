@@ -32,7 +32,7 @@
 First i use HTML 5 thas it's markup languange used for structuring and presenting content on the WWW. Then i used CSS 3 that is used for structuring and styling web pages, especially flexbox and grid too.
 
 
-### <a name="walkthrough" href= "https://www.loom.com/share/4f8856c359c5475ebfaa59a578711397">Project Walkthrough</a>
+### <a name="walkthrough" href= "https://www.loom.com/share/1c455f1443d441d1a63f73ff81078938">Project Walkthrough</a>
 
 ### Key Features <a name="key-features"></a>
 
@@ -97,6 +97,16 @@ Install this project linters: *do not change the any config file in any way*    
 - 3.3 Run npx stylelint "**/*.{css,scss}" on the root of your directory of your project.
 
 - 3.4 Fix linter errors.
+
+4- To install ESlint to avoid errors and enforce conventions in JavaScript.
+
+- 4.1 Run npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+- 4.2 Create a .eslintrc.json file and copy its content.
+
+- 4.3 Run npx stylelint "npx eslint ." on the root of your directory of your project.
+
+- 4.4 Fix linter errors.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
