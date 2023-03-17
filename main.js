@@ -77,7 +77,7 @@ const cardsCreation = (speakers, containerName) => {
       <div class="Speaker-info">
         <h5>${item.nameS}</h5>
         <h6>${item.currentPosition}</h6>
-        <img class="card-line " src="./assetes/lineSpeakers.svg" alt="">
+        <img class="card-line " src="./assets/line.svg" alt="">
         <p>${item.descriptionS}</p>
       </div>
     `;
