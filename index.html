@@ -13,26 +13,33 @@
 </head>
 <body>
   <header>
-    <nav class="container-nav d-flex flex-direction-row px-2 py-2 gap-5">
+    <div class="desktop-topNav">
+      <ul class="d-flex">
+        <li><a href=""><img src="./assets/facebook.svg" alt=""></a></li>
+        <li><a href=""><img src="./assets/twitter.svg" alt=""></a></li>
+        <li><a href="">English</a></li>
+      </ul>
+    </div>
+    <nav class="container-nav d-flex flex-direction-row px-2 py-2 ">
       <div class="nav-log pt-2">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <a class="d-flex aling-self-center " href="index.html"><img class="w-50 align-self-center" src="./assets/logo.png" alt=""></a>
+      <a class="d-flex" href="index.html"><img class="logoHeader" src="./assets/logo.svg" alt="logo"></a>
       <ul class="nav-menu ">
         <li class="page-parts about-link"><a class="nav-link" href="./aboutme.html">About</a></li>
         <li class="page-parts"><a class="nav-link" href="#program">Program</a></li>
         <li class="page-parts"><a class="nav-link" href="#blended-ways">Blended Ways</a></li>
         <li class="page-parts"><a class="nav-link" href="#speakersId">Speakers</a></li>
-        <li class="page-parts"><a class="nav-link" href="#sponsonrs">Sponsers</a></li>
-        <li class="page-parts"><a class="nav-link" href="https://thesocialsciences.com/">Campain</a></li>
+        <li class="page-parts"><a class="nav-link" href="#sponsonrs">Partners</a></li>
+        <li class="page-parts campain-link"><a class="nav-link" href="https://thesocialsciences.com/">Campain</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Section -->
-  <main class="page-development d-flex flex-column px-2">
+  <main class="page-development d-flex flex-column">
     <div class="main-titles d-flex flex-column-reverse px-1">
       <h1 class="main-title">Agency in an Era of Displacement and Social Change</h1>
       <h2 class="main-subtitle">18th International Conference on Interdisciplinary Social Sciences</h2>
@@ -49,11 +56,11 @@
   <!--Development section of the page-->
 
   <section class="cards-deployment d-flex flex-column">
-    <div class="d-flex flex-column align-items-center">
-      <div class="blended-title d-flex flex-column align-items-center">
-        <h2 id="blended-ways">Blended Ways of Speaking</h2>
-        <img src="./assets/line.svg" alt="">
-      </div>
+    <div class="blended-title d-flex flex-column align-items-center">
+      <h2 id="blended-ways">Blended Ways of Speaking</h2>
+      <img src="./assets/line.svg" alt="horizontal desing line">
+    </div>
+    <div class="d-flex cards-blended align-items-center">
       <div class="blended-ways">
         <img src="./assets/lecture.svg" alt="">
         <h4>Plenary Sessions</h4>
@@ -80,9 +87,9 @@
         <h4>Innovation Showcase</h4>
         <p>Researchers and innovators present practices and development. Presentations should be grounded in presenters' research or experience</p>
       </div>
-      <div class="btn-container">
-        <a class="align-self-center" href="https://thesocialsciences.com/2023-conference/format">learn more about blended ways</a>
-      </div>
+    </div>
+    <div class="btn-container">
+      <a class="align-self-center" href="https://thesocialsciences.com/2023-conference/format">learn more about blended ways</a>
     </div>
   </section>
 
@@ -98,6 +105,9 @@
 
 
       </div>
+      <div class="speaker-button">
+        <button id="btn-speaker"><p class="btn-more">More</p><img  class="arrow" src="./assets/arrow-down.svg" alt="arrow-down"></button>
+      </div>
     </div>
   </aside>
 
@@ -108,18 +118,23 @@
         <img src="./assets/line.svg" alt="">
       </div>
       <div class="partners-logo d-flex">
-        <img class="w-25" src="./assets/uni1.jpeg" alt="">
-        <img class="w-25" src="./assets/uni2.jpeg" alt="">
-        <img class="w-25" src="./assets/uni3.jpeg" alt="">
+        <img class="w-25" src="./assets/uni1.jpeg" alt="faculty of social science">
+        <img class="w-25" src="./assets/uni2.jpeg" alt="rmit university">
+        <img class="w-25" src="./assets/uni3.jpeg" alt="university of athens">
       </div>
       <div class="partners-logo d-flex">
-        <img class="w-25" src="./assets/uni4.jpeg" alt="">
-        <img class="w-25" src="./assets/uni5.jpeg" alt="">
+        <img class="w-25" src="./assets/uni4.jpeg" alt="university of sao pablo">
+        <img class="w-25" src="./assets/uni5.jpeg" alt="university of the aegean">
       </div>
     </div>
     <div class="partner-footer d-flex flex-row">
-      <img src="./assets/logofooter.svg" alt="">
-      <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+      <div class="footer-logo">
+        <img src="./assets/logoSolo.png" alt="Interdisciplinary Social Sciences Logo">
+      </div>
+      <div class="support-footer">
+        <p>Have a question? We’re here to help. Visit the help center to get started.</p>
+        <a href="https://cgscholar.com/cg_support/en">support center</a>
+      </div>
     </div>
   </footer>
 
