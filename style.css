@@ -9,7 +9,7 @@ body {
 
 /* NavBar */
 header {
-  height: fit-content;
+  height: auto;
 }
 
 .desktop-topNav {
@@ -111,7 +111,7 @@ header {
   text-transform: uppercase;
 }
 
-/* Main Section Development*/
+/* Main Section Development */
 
 .page-development {
   background-image: url(./assets/main-invite-background.png);
@@ -131,8 +131,8 @@ header {
   background-size: contain;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  background-clip: border-box;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 2em;
   font-weight: 900;
   line-height: 48px;
@@ -147,7 +147,7 @@ header {
 .main-description {
   margin-top: 10%;
   border: 4px #fff solid;
-  background-color: #F7F7F8;
+  background-color: #f7f7f8;
 }
 
 #program {
@@ -164,7 +164,7 @@ header {
   padding-left: 8%;
 }
 
-.main-location h3{
+.main-location h3 {
   font-family: 'Gothic A1', sans-serif;
   font-weight: 900;
   font-size: 20px;
@@ -211,10 +211,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2%;
   gap: 15px;
   margin: 2% 3%;
-  align-items: center;
+  margin-bottom: 2%;
   background-color: rgba(255, 255, 255, 0.1);
   width: 90%;
   height: 100%;
@@ -256,7 +255,7 @@ header {
   margin: 7% 0;
   display: flex;
   align-items: center;
-} 
+}
 
 .btn-container a {
   text-decoration: none;
@@ -270,7 +269,7 @@ header {
   text-align: center;
 }
 
-/* Speakers Development*/
+/* Speakers Development */
 .speakers {
   margin-bottom: 15%;
 }
@@ -278,7 +277,6 @@ header {
 .speakers-title {
   margin-top: 8%;
   margin-bottom: 12%;
-
 }
 
 .speakers-title h3 {
@@ -342,7 +340,7 @@ header {
   color: #000;
 }
 
-/* Partners Footer Logos*/
+/* Partners Footer Logos */
 
 .partner {
   align-items: center;
@@ -426,8 +424,8 @@ header {
 
 /* About Us Page CSS */
 
-.main-aboutUs{
-  background-color: #F7F7F8;
+.main-aboutUs {
+  background-color: #f7f7f8;
   background-image: url(./assets/backgroundmain.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -440,11 +438,8 @@ header {
 }
 
 .title-aboutUs {
-  background-color: #ff4f38;
+  color: #ff4f38;
   text-transform: uppercase;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
   font-size: 2em;
   font-weight: 900;
   line-height: 48px;
@@ -579,7 +574,7 @@ header {
 /* Desktop Version */
 
 @media only screen and (min-width: 768px) {
-  /* Header Desktop*/
+  /* Header Desktop */
   .desktop-topNav {
     display: flex;
     background-color: #3e3e3e;
@@ -604,8 +599,8 @@ header {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14,5px;
-  } 
+    line-height: 14.5px;
+  }
 
   .container-nav {
     gap: 0;
@@ -663,20 +658,20 @@ header {
   }
 
   .about-link a {
-    color: #F07F7E;
+    color: #f07f7e;
   }
 
   .campain-link {
-    border: #EC4327 4px solid;
+    border: #ec4327 4px solid;
     margin: 0;
   }
 
   .campain-link a {
     margin: 2px;
     align-items: center;
-    padding-bottom: 9px;
     padding: 0 8px;
-    color: #EC4327;
+    padding-bottom: 9px;
+    color: #ec4327;
   }
 
   /* Main Desktop */
@@ -729,7 +724,7 @@ header {
   .blended-ways {
     flex-direction: column;
     gap: 1%;
-    height: fit-content;
+    height: auto;
     min-height: 400px;
     min-width: 120px;
     margin: 1% 1%;
@@ -751,15 +746,13 @@ header {
   .speakers-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-left: 6%;
     margin-bottom: 5%;
     margin-right: 4%;
-    justify-content: center;
-    margin: 0;
-    margin-left: 6%;
-    margin-right: 6%;
   }
 
-  /* About Us Page*/
+  /* About Us Page */
 
   .main-aboutUs {
     padding: 0 15%;
