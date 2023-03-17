@@ -71,9 +71,13 @@ const speakersContainer = document.getElementById('speakers-container');
 const cardsCreation = (speakers, containerName) => {
   speakers.forEach((item) => {
     const card = document.createElement('div');
-    card.classList = 'speaker d-flex';
+    if (item.id > 2) {
+      card.classList = 'speaker speaker-hidden';
+    } else {
+      card.classList = 'speaker d-flex';
+    }
     card.innerHTML = ` 
-      <img class="cards-img" src="${item.img}" alt="">
+      <img class="cards-img" src="${item.img}" alt="${item.nameS}">
       <div class="Speaker-info">
         <h5>${item.nameS}</h5>
         <h6>${item.currentPosition}</h6>
@@ -86,3 +90,24 @@ const cardsCreation = (speakers, containerName) => {
 };
 
 cardsCreation(speakers, speakersContainer);
+
+const btnSpeakers = document.getElementById('btn-speaker');
+const btnText = document.querySelector('.btn-more');
+
+btnSpeakers.addEventListener('click', () => {
+  const hiddenCards = document.querySelectorAll('.speaker-hidden');
+  hiddenCards.forEach((card) => {
+    card.classList.toggle('active');
+    card.classList.toggle('speaker-hidden');
+  });
+  if (btnText.innerText === 'MORE') {
+    btnText.innerText = 'Less';
+  } else {
+    btnText.innerText = 'More ';
+    const visibleCards = document.querySelectorAll('.active');
+    visibleCards.forEach((card) => {
+      card.classList.remove('active');
+      card.classList.toggle('speaker-hidden');
+    });
+  }
+});
