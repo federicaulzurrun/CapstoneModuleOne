@@ -1,17 +1,14 @@
 const hamburger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
-const containerMain = document.querySelector('.container-main');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
-  containerMain.classList.toggle('active');
 });
 
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
-  containerMain.classList.remove('active');
 }));
 
 /* Speakers Cards */
@@ -93,6 +90,7 @@ cardsCreation(speakers, speakersContainer);
 
 const btnSpeakers = document.getElementById('btn-speaker');
 const btnText = document.querySelector('.btn-more');
+const arrow = document.querySelector('.arrow');
 
 btnSpeakers.addEventListener('click', () => {
   const hiddenCards = document.querySelectorAll('.speaker-hidden');
@@ -102,12 +100,14 @@ btnSpeakers.addEventListener('click', () => {
   });
   if (btnText.innerText === 'MORE') {
     btnText.innerText = 'Less';
+    arrow.classList.toggle('active');
   } else {
     btnText.innerText = 'More ';
-    const visibleCards = document.querySelectorAll('.active');
+    const visibleCards = document.querySelectorAll('.speaker.active');
     visibleCards.forEach((card) => {
       card.classList.remove('active');
       card.classList.toggle('speaker-hidden');
+      arrow.classList.remove('active');
     });
   }
 });
