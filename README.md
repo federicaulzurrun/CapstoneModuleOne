@@ -111,13 +111,6 @@ Install this project linters: *do not change the any config file in any way*    
 
 - 4.4 Fix linter errors.
 
-### Install
-
-Install this project with:
-
-```sh
-  Installation is not necessary
-```
 
 ### Usage
 
