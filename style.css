@@ -680,10 +680,10 @@ header {
     position: initial;
     background-color: #fff;
     text-decoration: none;
-    gap: 3%;
+    gap: 5%;
     width: 60%;
     padding-top: 5px;
-    padding-left: 0;
+    padding-left: 10%;
     height: auto;
     align-self: flex-end;
     text-align: right;
@@ -717,7 +717,7 @@ header {
   .page-parts a {
     display: flex;
     font-family: 'Lato', sans-serif;
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     font-weight: 800;
     line-height: 16.8px;
     color: #868686;
@@ -817,6 +817,7 @@ header {
   .blended-ways p {
     font-size: 1vw;
     line-height: 1.9vw;
+    text-align: center;
   }
 
   .btn-container {
