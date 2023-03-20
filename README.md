@@ -11,6 +11,9 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -108,8 +111,40 @@ Install this project linters: *do not change the any config file in any way*    
 
 - 4.4 Fix linter errors.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+Open Live Server
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  To check the HTML functionality use: 'npx hint .'
+```
+
+```sh
+  To check the CSS functionality use: 'npx stylelint "**/*.{css,scss}"'
+```
+
+```sh
+  To check the JavaScript functionality use: 'npx eslint."'
+```
+
+### Deployment
+
+You can deploy this project using:
+
+```sh
+GitHub pages.
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
 
